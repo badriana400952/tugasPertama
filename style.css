@@ -1,0 +1,138 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+	background: #F4EEE0;
+}
+.container{
+	width: 80%;
+	height: 600px;
+	background: red;
+	margin: 20px auto;
+	background: white;
+	    box-shadow: 0px 0px 12px -6px black;
+
+}
+.badan_dua{
+	width: 400px;
+	margin: auto;
+	padding-top: 20px;
+	text-align: justify;
+}
+.badan_dua h1{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 8px;
+	font-family: 'Poppins', sans-serif;
+	background: white;
+}
+.badan_dua p{
+	font-size: 11px;
+	font-family: 'Poppins', sans-serif;
+}
+.badan_dua button{
+	background: black;
+	color: white;
+	padding: 3px 20px;
+	border-radius: 13px;
+	margin-top: 15px;
+}
+.badan_dua h3 a{
+	text-decoration: none;
+	color: black;
+	font-size: 13px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.badan_dua h3{
+	margin-top: 10px;
+}
+
+.material-symbols-outlined {
+	margin-bottom: 10px;
+	margin-left: 2px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.badan_tiga{
+	width: 200px;
+	margin: 0 auto;
+	text-align: center;
+}
+.badan_tiga i{
+	padding: 5px;
+}
+.badan_empat{
+	width: 200px;
+	height: 320px;
+	margin: 5px auto;
+	background: white;
+	box-shadow: 0px 0px 12px -6px black;
+	border-radius: 10px;
+}
+.badan_empat img{
+	width: 200px;
+
+	border-radius: 10px 10px 0 0;
+
+}
+.badan_empat h2{
+	font-size: 16px;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Poppins', sans-serif;
+
+}
+.badan_empat{
+	text-align: center;
+}
