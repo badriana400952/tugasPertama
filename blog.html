@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badriana</title>
+</head>
+
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <img src="https://dumbways.id/assets/images/brandwhite.png" />
+            <div class="list">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Card</a></li>
+                    <li><a href="blog.html" class="aktif">Blog</a></li>
+                </ul>
+                <a href="konta.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="fromGrup">
+        <div class="fromBlog">
+            <form class="fromInput" onsubmit="tambahBlog(event)">
+                <div class="nama">
+                    <label for="nama" class="form-label">Project Name</label>
+                    <input type="text" class="form-control" id="nama">
+                </div>
+                <div class="flext">
+                    <div class="flext-nama">
+                        <label for="start" class="form-label">Start Data</label>
+                        <input type="text" class="form-control" id="start">
+                    </div>
+                    <div class="flext-nama">
+                        <label for="end" class="form-label">End Data</label>
+                        <input type="text" class="form-control" id="end">
+                    </div>
+                </div>
+                <div class="des">
+                    <textarea class="form-control" placeholder="deskripsi" id="deskripsi"></textarea>
+                </div>
+                
+                <div class="check">
+                    <label>Technologi</label>
+                    <div class="checkGrup">
+                        <div class="box">
+                            <input type="checkbox" id="nodeJss" name="nodeJss" >
+                            <label for="nodeJss">Node Js</label><br>
+    
+                            <input type="checkbox" id="react" name="react" >
+                            <label for="react">React Js</label><br>
+                        </div>
+                        <div class="box">
+                            <input type="checkbox" id="next" name="next" >
+                            <label for="next">Next js</label><br>
+    
+                            <input type="checkbox" id="typeScript" name="typeScript" >
+                            <label for="typeScript">TypeScript</label><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="nama">
+                    <label for="image" class="form-label">Project Name</label>
+                    <input type="file" class="form-control" id="image">
+                </div>
+                <button type="submit" class="button">Kiriim</button>
+            </form>
+        </div>
+
+            
+    
+    </div>
+    <hr class="hrs">
+    <div class="view" >
+        <section  id="contentView">
+            <div class="view-grup">
+                <div class="view-img">
+                    <img src="assets/a.jpg" alt="badro" >
+                </div>
+                <div class="veiw-desk">
+                    <h1>Badriana</h1>
+                    <p>Jnauari- 2010</p>
+                    <p>des - 2012</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.,</p>
+                </div>
+                <div class="iconss">
+                    <i class="fa-brands fa-node"></i>
+                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-brands fa-square-js"></i>
+                    <i class="fa-brands fa-vuejs"></i>
+                </div>
+            <div class="buttonGrup">
+                <button><a href="detail.html">Detail</a> </button>
+                <button>Delete</button>
+            </div>
+            </div>
+        </section>
+    </div>
+    
+   
+    <script src="js/blog.js"></script>
+</body>
+</html>
