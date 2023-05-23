@@ -16,7 +16,7 @@ function tambahBlog(event) {
     //masukan elemen berdasarkan id dengan value yg di input kedalam variabel
     let nama = document.getElementById("nama").value;
     let start = document.getElementById("start").value;
-    let end = document.getElementById("end").value;
+    let end = document.getElementById("endDate").value;
     let deskripsi = document.getElementById("deskripsi").value;
     //masukan element berdasarkan id dengan cheklis yang di pilih kedalam variabel
     let iconnode = document.getElementById("nodeJss").checked ? nodejsic : "";
@@ -25,6 +25,33 @@ function tambahBlog(event) {
     let typeScript = document.getElementById("typeScript").checked ? typeScriptic : "";
     let image = document.getElementById("image").files;
 
+    let tanggalSekarang = new Date(start).getTime()
+    let tanggalDurasi = new Date(end).getTime()
+    let jarak = tanggalSekarang - tanggalDurasi
+    // let durasi = Math.floor(jarak / (1000 * 60 * 60 * 24 * 30))
+
+
+    let detik = Math.floor(jarak / 1000)
+    let menit = Math.floor(detik / 60)
+    let jam = Math.floor(menit / 60)
+    let hari = Math.floor(jam / 24)
+    let bulan = Math.floor(hari / 30)
+
+
+
+
+    // const bulanDate = Math.floor(jarak / (1000 * 60 * 60 * 24 * 30));
+    // const hariDate = Math.floor(jarak % (1000 * 60 * 60 * 24) / (1000 * 60 * 60 * 24));
+    // const jamDate = Math.floor(jarak % (1000 * 60 * 60) / (1000 * 60 * 60));
+    // const menitDate = Math.floor(jarak % (1000 * 60) / (1000 * 60));
+
+
+
+    // concole.log(jarak)
+
+
+
+
     //upload omage 
     image = URL.createObjectURL(image[0]);
     console.log(image);
@@ -32,6 +59,15 @@ function tambahBlog(event) {
     //buat object
     let blogs = {
         nama,
+        // detik,
+        // menit,
+        // jam,
+        hari,
+        bulan,
+        // bulanDate,
+        // hariDate,
+        // jamDate,
+        // menitDate,
         start,
         end,
         deskripsi,
@@ -40,6 +76,7 @@ function tambahBlog(event) {
         iconnext,
         typeScript,
         image,
+        // postWaktu: new Date(),
     };
     //array kosong bloger masukan/tambahkan object blogs kedalam
     blogr.push(blogs);
@@ -53,18 +90,18 @@ function tambahBlog(event) {
 function viewElement() {
     //ketika di klik
     //document berdasarkan id contentView ubah menjadi kosong
-    document.getElementById("contentView").innerHTML = "";
-        
+    document.getElementById("view").innerHTML = "";
+
     for (let index = 0; index < blogr.length; index++) {
-        document.getElementById("contentView").innerHTML +=`
+        document.getElementById("view").innerHTML += `
         <div class="view-grup">
             <div class="view-img">
                 <img src="${blogr[index].image}" alt="badro" >
             </div>
             <div class="veiw-desk">
                 <h1>${blogr[index].nama}</h1>
-                <p>${blogr[index].start}</p>
-                <p>${blogr[index].end}</p>
+                <p>Durasi ${blogr[index].bulan} Bulan</p>
+                <p>Durasi ${blogr[index].hari} Hari</p>
                 <p>${blogr[index].deskripsi}</p>
             </div>
             <div class="iconss">
@@ -81,7 +118,10 @@ function viewElement() {
     `;
     }
 
-
-
-
 }
+// function getFullStart(time) {
+
+//     return time;
+// }
+
+// getFullStart()

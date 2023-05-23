@@ -15,16 +15,16 @@
     <div class="content">
         <form >
             <div class="mb-3">
-                <label for="nama" class="form-label">Name</label>
-                <input type="text" class="form-control" id="nama">
+                <label for="nama" class="form-label" required>Name</label>
+                <input type="text" class="form-control" id="nama" required>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                <input type="email" class="form-control" id="email" required aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
                 <label for="phone" class="form-label">Phone Number</label>
-                <input type="number" class="form-control" id="phone">
+                <input type="number" class="form-control" required id="phone">
             </div>
 
             <div class="mb-3">
@@ -37,7 +37,7 @@
                 </select>
             </div>
             <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="deskripsi"></textarea>
+                <textarea class="form-control" required placeholder="Leave a comment here" id="deskripsi"></textarea>
                 <label for="deskripsi">Comments</label>
               </div>
             <button type="button" onclick="handleKirim()" class="btn btn-primary">Submit</button>

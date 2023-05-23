@@ -19,7 +19,7 @@
             <div class="list">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="index.html">Card</a></li>
+                    <li><a href="index.html">My Project</a></li>
                     <li><a href="blog.html" class="aktif">Blog</a></li>
                 </ul>
                 <a href="konta.html">Contact</a>
@@ -32,20 +32,20 @@
             <form class="fromInput" onsubmit="tambahBlog(event)">
                 <div class="nama">
                     <label for="nama" class="form-label">Project Name</label>
-                    <input type="text" class="form-control" id="nama">
+                    <input type="text" class="form-control" id="nama" required>
                 </div>
                 <div class="flext">
                     <div class="flext-nama">
                         <label for="start" class="form-label">Start Data</label>
-                        <input type="text" class="form-control" id="start">
+                        <input type="date" class="form-control" id="start" required>
                     </div>
                     <div class="flext-nama">
-                        <label for="end" class="form-label">End Data</label>
-                        <input type="text" class="form-control" id="end">
+                        <label for="endDate" class="form-label">End Data</label>
+                        <input type="date" class="form-control" id="endDate" required>
                     </div>
                 </div>
                 <div class="des">
-                    <textarea class="form-control" placeholder="deskripsi" id="deskripsi"></textarea>
+                    <textarea class="form-control" placeholder="deskripsi" id="deskripsi" required></textarea>
                 </div>
                 
                 <div class="check">
@@ -79,7 +79,7 @@
     
     </div>
     <hr class="hrs">
-    <div class="view" >
+    <div class="view" id="view">
         <section  id="contentView">
             <div class="view-grup">
                 <div class="view-img">
@@ -89,6 +89,7 @@
                     <h1>Badriana</h1>
                     <p>Jnauari- 2010</p>
                     <p>des - 2012</p>
+                    <h6>durasi: 3 bulam</h6>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.,</p>
                 </div>
                 <div class="iconss">
@@ -103,9 +104,10 @@
             </div>
             </div>
         </section>
+        
     </div>
     
-   
+
     <script src="js/blog.js"></script>
 </body>
 </html>

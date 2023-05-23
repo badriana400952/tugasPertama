@@ -416,8 +416,10 @@ table {
 	line-height: 30px;
 	margin: auto;
 	display: flex;
-	overflow: hidden;
+	align-items: center;
 	justify-content: center;
+	flex-wrap: wrap;
+	gap: 5px;
 }
 .view-grup{
 	width: 200px;
