@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="h1">hallo</h1>
+
+
+    <script>
+
+        const h1 = document.getElementById('h1');
+        console.log(h1)
+        //   contoh soal 
+        //   Buatlah program JavaScript yang memeriksa apakah suatu bilangan adalah positif, negatif, atau nol
+        let angka = -10
+        if (angka >= 1) {
+            console.log('ini angka positif')
+        } else if (angka == 0) {
+            console.log('ini angka nol')
+        } else {
+            console.log('ini angka negatif')
+        }
+        // Tulislah program JavaScript yang memeriksa apakah suatu bilangan adalah bilangan positif ganjil.
+
+        const angka2 = 10;
+        if (angka2 % 2 === 1) {
+            console.log("ini bilangan genap")
+        } else {
+            console.log("ini ganjil")
+        }
+        // Buatlah program JavaScript yang meminta pengguna untuk memasukkan usia mereka. Jika usia pengguna kurang dari 18 tahun, tampilkan pesan bahwa mereka adalah remaja. Jika usia pengguna 18 tahun atau lebih, tampilkan pesan bahwa mereka adalah dewasa.
+        const usia = 55
+        if (usia <= 18) {
+            console.log('kamu masih remaja')
+        } else if (usia <= 35) {
+            console.log('kamu sudah dewasa')
+        } else {
+            console.log('kamu sudah tua')
+        }
+
+        //Tulis program JavaScript yang meminta pengguna memasukkan nilai ujian mereka. Jika nilai lebih besar atau sama dengan 60, tampilkan pesan bahwa mereka lulus. Jika nilai kurang dari 60, tampilkan pesan bahwa mereka gagal.
+        let nilaiUjian = 60;
+        if (nilaiUjian >= 60) {
+            console.log('anda lulus')
+        } else {
+            console.log('anda gagal')
+        }
+
+        function tambah(a, b) {
+            console.log('function tambah nih',a + b)
+        }
+        tambah(100, 20);
+
+        // Buatlah program JavaScript yang meminta pengguna memasukkan nilai ujian Matematika, Bahasa Inggris, dan IPA. Program tersebut harus menampilkan pesan berdasarkan rata-rata nilai pengguna:
+        // Jika rata-rata nilai lebih besar atau sama dengan 80, tampilkan pesan Anda mendapatkan nilai B.
+        // Jika rata-rata nilai lebih besar atau sama dengan 70, tampilkan pesan Anda mendapatkan nilai C.
+        // Jika rata-rata nilai lebih besar atau sama dengan 60, tampilkan pesan Anda mendapatkan nilai D.
+        // Jika rata-rata nilai kurang dari 60, tampilkan pesan Maaf, Anda mendapatkan nilai E.
+
+        // let Matematika = 0;
+        // let bahasaInggris = 0;
+        // let ipa = 0;
+
+        function ujian() {
+            let matematika = 90;
+            let bahasaInggris = 70;
+            let ipa = 70;
+
+            let rataMate = matematika / 3;
+            console.log('rataMate', rataMate);
+
+            let rataInggris = bahasaInggris / 3;
+            let rataipa = ipa / 3;
+            let nilaiRataRata = rataMate + rataInggris + rataipa;
+            console.log('Anda', nilaiRataRata)
+
+            if (nilaiRataRata >= 80) {
+                console.log('Anda mendapatkan nilai B')
+            } else if (nilaiRataRata >= 60) {
+                console.log('Anda mendapatkan nilai C')
+            } else {
+                console.log('Anda mendapatkan nilai E')
+            }
+
+        }
+        ujian()
+
+        let umurDiskon = 50;
+
+        if (umurDiskon <= 20) {
+            console.log('maaf anda tidak mendapatkan Diskon')
+        } else if (umurDiskon <= 30) {
+            console.log('maaf anda tidak mendapatkan Diskon tunggu 10 tahun lagi')
+        } else {
+            console.log('anda mendapatkan diskon')
+        }
+
+
+        // let dataMobil = []
+        // let objDataMobil = {
+        //     merek : 'toyota',
+        //     type : 'inova',
+        //     warna : 'putih'
+        // }
+
+        // let mobb = dataMobil.push(objDataMobil);
+        // mobb.map((i) => {
+        //     {i.merek}
+        // })
+        // for ( let i = 1; i < objDataMobil.length; i++) {
+        //     console.log(mobb[i].merek)
+        // }
+  
+
+
+
+    </script>
+</body>
+
+</html>

@@ -2,30 +2,40 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" type="text/css" href="style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Badriana</title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<title>Badriana</title>
 </head>
 
 
 <body>
     <nav class="nav">
-        <div class="container">
-            <img src="https://dumbways.id/assets/images/brandwhite.png" />
-            <div class="list">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="index.html">My Project</a></li>
-                    <li><a href="blog.html" class="aktif">Blog</a></li>
-                </ul>
-                <a href="konta.html">Contact</a>
-            </div>
-        </div>
-    </nav>
+		<div class="container">
+			<img src="https://dumbways.id/assets/images/brandwhite.png" />
+			<div class="list">
+				<ul>
+					<li><a href="index.html" >My Project</a></li>
+					<li><a href="blog.html" class="aktif">Blog</a></li>
+				</ul>
+				<a href="konta.html">Contact</a>
+				<button class="menu-bar" onclick="toggle()">
+					<i class="fa-solid fa-bars" ></i>
+				</button>
+			</div>
+		</div>
+		<div class="link-button">
+			<ul id="muncul">
+				<li><a href="#">My Project</a></li>
+				<li class="aktif"><a href="blog.html">Blog</a></li>
+				<li><a href="konta.html">Contact</a></li>
+			</ul>
+			
+		</div>
+	</nav>
 
     <div class="fromGrup">
         <div class="fromBlog">
@@ -104,10 +114,36 @@
             </div>
             </div>
         </section>
+        <section  id="contentView">
+            <div class="view-grup">
+                <div class="view-img">
+                    <img src="assets/a.jpg" alt="badro" >
+                </div>
+                <div class="veiw-desk">
+                    <h1>Badriana</h1>
+                    <p>Jnauari- 2010</p>
+                    <p>des - 2012</p>
+                    <h6>durasi: 3 bulam</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.,</p>
+                </div>
+                <div class="iconss">
+                    <i class="fa-brands fa-node"></i>
+                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-brands fa-square-js"></i>
+                    <i class="fa-brands fa-vuejs"></i>
+                </div>
+            <div class="buttonGrup">
+                <button><a href="detail.html">Detail</a> </button>
+                <button>Delete</button>
+            </div>
+            </div>
+        </section>
         
     </div>
     
 
     <script src="js/blog.js"></script>
+    <script src="js/bars.js"></script>
+
 </body>
 </html>

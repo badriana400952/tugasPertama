@@ -16,7 +16,7 @@ function tambahBlog(event) {
     //masukan elemen berdasarkan id dengan value yg di input kedalam variabel
     let nama = document.getElementById("nama").value;
     let start = document.getElementById("start").value;
-    let end = document.getElementById("endDate").value;
+    let endd = document.getElementById("endDate").value;
     let deskripsi = document.getElementById("deskripsi").value;
     //masukan element berdasarkan id dengan cheklis yang di pilih kedalam variabel
     let iconnode = document.getElementById("nodeJss").checked ? nodejsic : "";
@@ -25,30 +25,19 @@ function tambahBlog(event) {
     let typeScript = document.getElementById("typeScript").checked ? typeScriptic : "";
     let image = document.getElementById("image").files;
 
-    let tanggalSekarang = new Date(start).getTime()
-    let tanggalDurasi = new Date(end).getTime()
-    let jarak = tanggalSekarang - tanggalDurasi
+    let x = new Date(start)
+    let y = new Date(endd)
+    let tanggalSekarang = x.getTime();
+    let tanggalDurasi = y.getTime();
+    let jarak = tanggalDurasi - tanggalSekarang ;
     // let durasi = Math.floor(jarak / (1000 * 60 * 60 * 24 * 30))
 
 
-    let detik = Math.floor(jarak / 1000)
-    let menit = Math.floor(detik / 60)
-    let jam = Math.floor(menit / 60)
-    let hari = Math.floor(jam / 24)
-    let bulan = Math.floor(hari / 30)
-
-
-
-
-    // const bulanDate = Math.floor(jarak / (1000 * 60 * 60 * 24 * 30));
-    // const hariDate = Math.floor(jarak % (1000 * 60 * 60 * 24) / (1000 * 60 * 60 * 24));
-    // const jamDate = Math.floor(jarak % (1000 * 60 * 60) / (1000 * 60 * 60));
-    // const menitDate = Math.floor(jarak % (1000 * 60) / (1000 * 60));
-
-
-
-    // concole.log(jarak)
-
+    let detik = Math.floor(jarak / 1000);
+    let menit = Math.floor(detik / 60); 
+    let jam = Math.floor(menit / 60); //82080
+    let hari = Math.floor(jam / 24);
+    let bulan = Math.floor(hari / 30);
 
 
 
@@ -59,17 +48,16 @@ function tambahBlog(event) {
     //buat object
     let blogs = {
         nama,
-        // detik,
-        // menit,
-        // jam,
+        detik,
+        menit,
+        jam,
         hari,
         bulan,
-        // bulanDate,
-        // hariDate,
-        // jamDate,
-        // menitDate,
+        jarak,
+        tanggalDurasi,
+        tanggalSekarang,
         start,
-        end,
+        endd,
         deskripsi,
         iconnode,
         iconreact,
@@ -78,6 +66,7 @@ function tambahBlog(event) {
         image,
         // postWaktu: new Date(),
     };
+
     //array kosong bloger masukan/tambahkan object blogs kedalam
     blogr.push(blogs);
     console.log(blogr);
@@ -100,8 +89,9 @@ function viewElement() {
             </div>
             <div class="veiw-desk">
                 <h1>${blogr[index].nama}</h1>
-                <p>Durasi ${blogr[index].bulan} Bulan</p>
-                <p>Durasi ${blogr[index].hari} Hari</p>
+                <p>Dari ( ${blogr[index].start})  </p>
+                <p>Sampai ( ${blogr[index].endd})  </p>
+                <p>Durasi  ${blogr[index].bulan} Bulan atau ${blogr[index].hari} hari</p>
                 <p>${blogr[index].deskripsi}</p>
             </div>
             <div class="iconss">

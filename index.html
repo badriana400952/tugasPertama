@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -16,12 +15,22 @@
 			<img src="https://dumbways.id/assets/images/brandwhite.png" />
 			<div class="list">
 				<ul>
-					<li><a href="#" >Home</a></li>
 					<li><a href="#" class="aktif">My Project</a></li>
 					<li><a href="blog.html">Blog</a></li>
 				</ul>
 				<a href="konta.html">Contact</a>
+				<button class="menu-bar" onclick="toggle()">
+					<i class="fa-solid fa-bars" ></i>
+				</button>
 			</div>
+		</div>
+		<div class="link-button">
+			<ul id="muncul">
+				<li class="aktif"><a href="#">My Project</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="konta.html">Contact</a></li>
+			</ul>
+			
 		</div>
 	</nav>
 	<section class="content">
@@ -60,7 +69,6 @@
 
 		<div class="sectionDua">
 			<div class="sectionCard1">
-
 				<div class="card1">
 					<img src="assets/a.jpg">
 					<h2>Lorem ipsum</h2>
@@ -69,11 +77,8 @@
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-						amet,
-						consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+						
+						</p>
 				</div>
 			</div>
 			<div class="sectionCard2">
@@ -107,11 +112,11 @@
 				</div>
 
 			</div>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br>
 		</div>
 
 	</section>
-
-
+	<script src="js/bars.js"></script>
 </body>
 
 </html>
