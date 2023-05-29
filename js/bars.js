@@ -22,16 +22,3 @@ function toggle() {
   
 }
  
-// var onOff = false;
-
-// // Fungsi untuk mengubah status onOff dari hidup ke mati atau sebaliknya
-// function toggleOnOff() {
-//   onOff = !onOff; // Menggunakan operator negasi (!) untuk membalik nilai boolean
-// }
-
-// // Contoh penggunaan fungsi toggleOnOff
-// console.log(onOff); // Output: false (mati)
-// toggleOnOff();
-// console.log(onOff); // Output: true (hidup)
-// toggleOnOff();
-// console.log(onOff)

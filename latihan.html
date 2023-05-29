@@ -10,7 +10,7 @@
 
 <body>
     <h1 id="h1">hallo</h1>
-
+    <h1 id="h2"></h1>
 
     <script>
 
@@ -53,7 +53,7 @@
         }
 
         function tambah(a, b) {
-            console.log('function tambah nih',a + b)
+            console.log('function tambah nih', a + b)
         }
         tambah(100, 20);
 
@@ -116,7 +116,40 @@
         // for ( let i = 1; i < objDataMobil.length; i++) {
         //     console.log(mobb[i].merek)
         // }
-  
+
+        let testimonialData = [
+            {
+                nama: "dd",
+                jurusan: "informatika",
+            },
+            {
+                nama: "aa",
+                jurusan: "ipa",
+            },
+            {
+                nama: "ee",
+                jurusan: "ips",
+            }
+
+
+        ];
+        console.table('ini data', testimonialData)
+        function test() {
+            let datass = "";
+            testimonialData.map(function (m) {
+                datass += `
+                <div>
+                    <p>${m.nama}</p>
+                    <p>${m.jurusan}</p>
+                </div>
+                `
+            })
+        document.getElementById('h2').innerHTML = datass;
+
+        }
+        test()
+    //    console.log(test())
+
 
 
 

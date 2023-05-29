@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <title>Testimonials</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/testimonials.css" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <img src="https://dumbways.id/assets/images/brandwhite.png" />
+        <div class="list">
+          <ul>
+            <li><a href="index.html" >My Project</a></li>
+            <li><a href="blog.html" >Blog</a></li>
+            <li><a href="testimonials.html" class="aktif">Testimonials</a></li>
+          </ul>
+          <a href="konta.html">Contact</a>
+          <button class="menu-bar" onclick="toggle()">
+            <i class="fa-solid fa-bars" ></i>
+          </button>
+        </div>
+      </div>
+      <div class="link-button">
+        <ul id="muncul">
+          <li><a href="#">My Project</a></li>
+          <li class="aktif"><a href="blog.html">Blog</a></li>
+          <li><a href="konta.html">Contact</a></li>
+        </ul>
+        
+      </div>
+    </nav>
+
+    <div class="containerff">
+      <h1>My Testimonials</h1>
+      <div class="container-rating">
+        <h2>Rating By Stars</h2>
+        <div class="rating">
+          <button class="rating-btn" onclick="allTestimonials()">All</button>
+          <button class="rating-btn" onclick="filterTestimonials(1)">
+            1 <i class="fa-solid fa-star"></i>
+          </button>
+          <button class="rating-btn" onclick="filterTestimonials(2)">
+            2 <i class="fa-solid fa-star"></i>
+          </button>
+          <button class="rating-btn" onclick="filterTestimonials(3)">
+            3 <i class="fa-solid fa-star"></i>
+          </button>
+          <button class="rating-btn" onclick="filterTestimonials(4)">
+            4 <i class="fa-solid fa-star"></i>
+          </button>
+          <button class="rating-btn" onclick="filterTestimonials(5)">
+            5 <i class="fa-solid fa-star"></i>
+          </button>
+        </div>
+      </div>
+      <section class="testimonials" id="testimonials">
+        <!-- <div class="testimonial">
+          <img
+            src="assets/images/profile/profile.png"
+            alt=""
+            class="profile-testimonial"
+          />
+          <p class="quote">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget
+            lectus eu libero venenatis gravida eget vel odio.
+          </p>
+          <p class="author">- Abel Dustin</p>
+        </div>
+
+        <div class="testimonial">
+          <img
+            src="assets/images/profile/profile.png"
+            alt=""
+            class="profile-testimonial"
+          />
+          <p class="quote">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget
+            lectus eu libero venenatis gravida eget vel odio.
+          </p>
+          <p class="author">- Abel Dustin</p>
+        </div>
+
+        <div class="testimonial">
+          <img
+            src="assets/images/profile/profile.png"
+            alt=""
+            class="profile-testimonial"
+          />
+          <p class="quote">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget
+            lectus eu libero venenatis gravida eget vel odio.
+          </p>
+          <p class="author">- Abel Dustin</p>
+        </div> -->
+      </section>
+    </div>
+
+    <script src="js/bars.js"></script>
+    
+    <script src="js/testimonials.js"></script>
+  </body>
+</html>
