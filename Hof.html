@@ -12,8 +12,13 @@
 
 <body>
     <div class="container mt-5">
+        <div class="input-group mb-3">
+            <input type="text" id="search" value="" class="form-control" placeholder="Username" aria-label="Username"
+                aria-describedby="basic-addon1">
+            <button class="btn btn-primary" type="text" onclick="getValue()">Searching</button>
+            <!-- <button onclick="getValue()">cari</button> -->
+        </div>
 
-    <input type="text" id="search" onchange=cariData() >
 
         <table class="table table-striped">
             <thead>
@@ -91,17 +96,34 @@
         }
         viewTabel()
 
-        function cariData() {
-            // let selec = document.getElementById('selec').value;
-           let dataSearching = document.getElementById("search").value;
-           console.log('ini cari', dataSearching);
+         function getValue(nama) {
 
-            // dataMahasiswa.filter( function(d) {
-                
-            // })
+
+            // let selec = document.getElementById('selec').value;
+            // let dataHtmlLoop = ""; 
+            let dataSearching = document.getElementById("search");
+            let value = dataSearching.value;
+
+            console.log('ini cari', value);
+
+            const filterSearching = dataMahasiswa.filter((d) => {
+                return d.nama === value;
+            })
+            let dataHtml = "";
+            filterSearching.map(function (d) {
+                dataHtml += `
+                    <tr>
+                        <td>${d.id}</td>
+                        <td>${d.nama}</td>
+                        <td>${d.nim}</td>
+                        <td>${d.jurusan}</td>
+                    </tr>
+                `
+            });
+            document.getElementById('table').innerHTML = dataHtml;
 
         }
-        // cariData()
+
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
